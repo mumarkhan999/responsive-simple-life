@@ -1,0 +1,252 @@
+/*
+    ================================================================
+    ================================================================
+    generic
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #707070;
+}
+
+.margin-width-controller {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 920px;
+}
+@media (max-width: 920px) {
+    .margin-width-controller {
+        width: 90%;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1090px) {
+    .margin-width-controller {
+        width: 95%;
+    }
+}
+/*
+    ================================================================
+    ================================================================
+    header section styling
+*/
+.header-wrapper {
+    padding: 5em 0;
+    background: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: #153775;
+}
+.header p {
+    color: #1892d2;
+}
+.header ul {
+    display: flex;
+}
+
+.header li {
+    list-style: none;
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+.header a {
+    text-decoration: none;
+    color: #717171;
+}
+
+.header a:hover,
+.header a:focus {
+    color: #3e8ae6;
+}
+
+.header .current-page a {
+    pointer-events: none;
+}
+
+@media (max-width: 920px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header li {
+        list-style: none;
+        margin: 1.5em 0 0 0;
+    }
+}
+
+.current-page {
+    border-bottom: 2px solid #717171;
+    padding-bottom: 0.25em;
+}
+
+/*
+    ================================================================
+    ================================================================
+    main section styling
+*/
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3em;
+}
+
+.main-content {
+    flex-basis: 75%;
+}
+
+.side-section {
+    flex-basis: 20%;
+}
+
+.main img {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 920px) {
+    .main {
+        flex-direction: column;
+    }
+    .sub-main-post .continue-reading {
+        margin: 1em 0 2em 0;
+    }
+}
+
+.continue-reading {
+    color: #3e8ae6;
+    margin: 1em 0;
+}
+
+.main h2 {
+    color: #153775;
+}
+
+.timestamp {
+    color: #707070;
+    margin: 1em 0;
+}
+
+.main-post hr {
+    margin: 1em 0;
+}
+
+.sub-main-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-main-post .img-section {
+    flex-basis: 35%;
+}
+
+.sub-main-post .description {
+    flex-basis: 60%;
+}
+
+.sub-main-post-header .timestamp {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .sub-main-post {
+        flex-direction: column;
+    }
+    .main-post hr {
+        margin: 1em 0 2em 0;
+    }
+    .sub-main-post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .sub-main-post-header .timestamp {
+        display: inline;
+    }
+    .img-section .timestamp {
+        display: none;
+    }
+}
+
+/*
+    side section styling
+*/
+.side-section .about-me,
+.side-section .recent-posts {
+    border: 18px solid #ebebeb;
+    padding: 1em;
+}
+.side-section h2 {
+    font-size: 1.2rem;
+}
+
+.side-section hr {
+    margin-top: 1em;
+}
+.side-section img {
+    padding: 1em 0;
+    object-fit: cover;
+}
+.side-section .about-me {
+    margin-bottom: 3em;
+}
+.side-section {
+    color: #153775;
+}
+
+/*
+===============================
+===============================
+===============================
+footer styling
+*/
+.footer-wrapper {
+    background: #143774;
+    padding: 3em 0;
+    margin-top: 3em;
+}
+.footer {
+    text-align: center;
+}
+
+/*
+===============================
+===============================
+===============================
+about-me page styling
+*/
+.about-me-container h3 {
+    color: #3e8ae6;
+    margin-top: 1em;
+}
+
+.about-me-container .main-content p {
+    margin-top: 1em;
+}
+
+.about-me-container .main-content {
+    margin-bottom: 3rem;
+}
+
+.about-me-container .main-content img {
+    margin-bottom: 3rem;
+}
