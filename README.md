@@ -5,7 +5,7 @@ This is the basic static website. We mainly focused on responsiveness of the sit
 [Link](https://www.youtube.com/watch?v=srvUrASNj0s)
 
 ### Things we used
-- Flex box (css) for creating
+- [Flex box](https://www.scaler.com/topics/css/css-flexbox/) (css) for creating
     - responsive navbar
     - responsive layout
 - `rem` and `em`
